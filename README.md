@@ -1,36 +1,40 @@
-# SWD_AUTOSCORE REPOSITORY FOR SWD AUTODETECTION IN SYNGAP1 RATS
+# SWD_AUTOSCORE REPOSITORY FOR SPIKE AND WAWE DISCHARGES (SWD) AUTODETECTION IN SYNGAP1 RATS BY CEPSTRUM ANALYSIS OF EEG SIGNAL
+Dr. Ingrid Buller 2020 - ingrid.buller@ed.ac.uk
+@Gonzalez-Sulser-Team
+CDBS - SIDB - University of Edinburgh 
+
+CODE WRITERN ON MATLAB R2018b
 
 1. Create folder on C://SCRIPTS
-2. Save SEIZURE_AUTOSCORE folder and set path with subfolders on Matlab
+2. Put inside the provided toolbox folders (analysis-tools-master, openephys and chronux_2_11 packaged on a .rar file)
+3. Also put the main SWD-autodetection codes: cepstral_detection.m, SWD_autoscore.m and first_spec.m. 
 
-3. Load SWD_autodetect.m and replace variables according to:
+4. Load the main script SWD_autodetect.m and replace variables according to:
 
 %%% VARIABLES TO FEED
 
 %% DEFINE RECORDING
- 
-pn='F:\DATA\EEG_From_Tom'; %% Main folder
-d='Rat_692_Baseline_tone_light'; %% Recording folder
-day= 'Baseline_tone_light'; %% Day
-ratname='Rat_692'; %% Rat name
-c='101_CH12.continuous'; % Channel to Analyse i.e for CAGES A-B-C-D = 20 - 52 - 84 - 116
+pn='F:\DATA\EEG_recoding; %% Main folder
+d='Rat_1'; %% Recording folder
+day= 'BL'; %% Day
+ratname='Rat_1'; %% Rat name
+c='100_CH1.continuous'; % EEG Channel to Analyse 
 
-%% DEFINE THRESHOLD CORRECTION FOR TAINI (USE TAINI CORRECTION 1 FOR CLEAN DATA AS YOURS)
-Taini_correction=1; % 1 for Taini, 0 for Open Ephys USE TAINI CORRECTION LAST TIME AND WORKED
+%% DEFINE THRESHOLD METHOD DEPENDING RECODING QUALITY 
+quality_correction=0; % 1 for Clean or Filtered Records, 0 for Raw Noisy Records
 
-
-%% DEFINE WHOLE OR PART OF RECORDING = not need to round
+%% DEFINE WHOLE OR PART OF RECORDING
 Define_sample = 0; %% if 0 uses whole recording, if 1 to use defined start/end below
 start_t=1; %% Sample point to start analysis 
 end_t=7632000; %% Sample point to end analysis
 
-%% DEFINE SAMPLING RATE (KEEP DOWNSAMPLING, USE Downsamp_factor = 2)
-Origin_rate = 2000 %% Original Sampling Rate in Hz
-Downsamp_factor = 2 %% To get sampling rate at 1 KHz (better analysis). i.e = for 250 original, downsampling factor = 0.25 to get 1 KHz
+%% DEFINE SAMPLING RATE
+Origin_rate = 1000; %% Original Sampling Rate in Hz
+Downsamp_factor = 1; %% To get sampling rate at 1 KHz (better analysis). i.e = for 2000 Hz original, downsampling factor = 2 to get 1 KHz
 
-4. Run SWD_autodetect.m and answer to the incoming windows/menus
+5. Run SWD_autodetect.m and answer to the incoming windows/menus
 
 
 POP-UP WINDOWS: ANSWER YES TO CHECK EVENTS AND NO WHEN YOU WANT TO STOP CHECKING
 ANSWER YES TO SAVE RESULTS
-WILL ASK YOU AGAIN TO CHECK EVENTS, YOU CAN PROCEED OR SAY NO AND LEAVE
+
