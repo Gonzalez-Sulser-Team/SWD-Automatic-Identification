@@ -1,5 +1,5 @@
 # SWD_AUTOSCORE REPOSITORY FOR SPIKE AND WAWE DISCHARGES (SWD) AUTODETECTION IN SYNGAP1 RATS BY CEPSTRUM ANALYSIS OF EEG SIGNAL
-Dr. Ingrid Buller 2020 
+ 
 
 
 Contact for code: Dr. Alfredo Gonzalez-Sulser: agonzal2@ed.ac.uk
@@ -40,4 +40,7 @@ Downsamp_factor = 1; %% To get sampling rate at 1 KHz (better analysis). i.e = f
 
 POP-UP WINDOWS: ANSWER YES TO CHECK EVENTS AND NO WHEN YOU WANT TO STOP CHECKING
 ANSWER YES TO SAVE RESULTS
+
+![SWD Detection](/repository/assets/AutomaticSWDDetection.jpg?raw=true "SWD Detection")
+
 
