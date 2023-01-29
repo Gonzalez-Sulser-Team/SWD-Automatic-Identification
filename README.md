@@ -41,6 +41,6 @@ Downsamp_factor = 1; %% To get sampling rate at 1 KHz (better analysis). i.e = f
 POP-UP WINDOWS: ANSWER YES TO CHECK EVENTS AND NO WHEN YOU WANT TO STOP CHECKING
 ANSWER YES TO SAVE RESULTS
 
-![SWD Detection](/repository/assets/AutomaticSWDDetection.jpg?raw=true "SWD Detection")
+![SWD Detection](https://github.com/Gonzalez-Sulser-Team/SWD-Automatic-Identification/blob/master/AutomaticSWDDetection.jpg?raw=true "SWD Detection")
 
 
