@@ -1,5 +1,6 @@
 # SWD_AUTOSCORE REPOSITORY FOR SPIKE AND WAWE DISCHARGES (SWD) AUTODETECTION IN SYNGAP1 RATS BY CEPSTRUM ANALYSIS OF EEG SIGNAL
-Dr. Ingrid Buller 2020 - ingrid.buller@ed.ac.uk
+Dr. Ingrid Buller 2020 
+Contact for code: Dr. Alfredo Gonzalez-Sulser: agonzal2@ed.ac.uk
 @Gonzalez-Sulser-Team
 CDBS - SIDB - University of Edinburgh 
 
