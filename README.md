@@ -5,6 +5,7 @@
 Contact for code: Dr. Alfredo Gonzalez-Sulser: agonzal2@ed.ac.uk
 @Gonzalez-Sulser-Team
 CDBS - SIDB - University of Edinburgh 
+[[DOI](https://zenodo.org/badge/254316014.svg)](https://zenodo.org/doi/10.5281/zenodo.12700971)
 
 CODE WRITERN ON MATLAB R2018b
 
